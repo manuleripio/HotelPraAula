@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recanto da Natureza</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li id="logo_topo"><img src="imagens/logo_branco.png" alt="Recanto da Natureza" /></li>
+            <li class="item_menu">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="item_menu">
+                <a href="hospedagens.html">Hospedagens</a>
+            </li>
+            <li class="item_menu">
+                <a href="reserva.html">Reserva</a>
+            </li>
+            <li class="botao_menu">
+
+            </li>
+        </ul>
+    </header>
+    <div id="topo">
+        <img src="imagens/logo.png" alt="Recanto da Natureza" />
+        <h1 class="titulo">Reservas</h1>
+    </div>
+    <article>
+        <h2>Fale Conosco!</h2>
+        <form action="/action_page.php" method="post">
+            <legend>Faça sua reserva agora!</legend>
+            <p>
+                <label for="firstname">Primeiro nome:</label>
+                <input type="text" id="firstname" name="firstname" value="­">
+            </p>
+            <p>
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" id="lastname" name="lastname" value="­">
+            </p>
+            <p>
+                <label for="checkin">Data de check-in:</label>
+                <input type="date" id="checkin" name="checkin" max="2025-01-01">
+            </p>
+            <p>
+                <label for="checkout">Data de check-out:</label>
+                <input type="date" id="checkout" name="checkout" min="2019-01-01"><br>
+            </p>
+            <fieldset>
+                <p><input type="radio" name="acomodacao" value="qduplo" checked> Quarto duplo<br></p>
+                <p><input type="radio" name="acomodacao" value="qtriplo"> Quarto triplo<br></p>
+                <p><input type="radio" name="acomodacao" value="qquadruplo"> Quarto quádruplo</p>
+            </fieldset>
+            <fieldset>
+                <p><input type="checkbox" name="passeio_cavalo" value="cavalo"> Passeio à cavalo</p>
+                <p><input type="checkbox" name="almoco_janta" value="refeicoes"> Almoço e janta na pousada</p>
+                <p><input type="checkbox" name="garagem" value="refeicoes"> Garagem</p>
+            </fieldset>
+            <div class="box_formulario">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </article>
+    <footer>
+        <p class="endereco_fim">Recanto da Natureza - Av. Bento Gonçalves, 3333 - Pelotas</p>
+    </footer>
+</body>
+
+</html>

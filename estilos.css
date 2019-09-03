@@ -1,0 +1,320 @@
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 0;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+header ul {
+	list-style: none;
+	background-color: #01a9db; 
+	margin: 0;
+	padding: 5px 0;
+	text-align: right;
+
+}
+
+.item_menu {
+	display: inline;
+}
+
+.item_menu a {
+	padding: 10px;
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;  
+	border-radius: 14px;
+}
+
+.item_menu a:hover {
+	background-color: #89e4ff;
+    color: #fff;
+    border-bottom: 3px solid #007ca0;
+}
+
+.titulo { 
+	color: #01a9db;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#img_inicio {
+	width: 48%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+article { 
+	position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+}
+
+article h2 {
+	font-size: 18pt;
+}
+
+table {
+	border-collapse: collapse;
+	/*centralizar a tabela*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+
+}
+
+th, td {
+	padding: 10px;
+}
+
+thead tr {
+	border-bottom: solid 3px #01a9db;
+}
+
+tbody tr {
+	transition: all linear 0.2s;
+}
+
+tbody tr:hover {
+	background-color: #89e4ff;
+}
+
+tfoot {
+	background-color: #01a9db;
+	color: beige;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+h2{ 
+	text-align: center;
+}
+
+.box_formulario {
+	margin-top: 30px;
+}
+
+article > p {
+    line-height: 150%;
+    text-align: justify;
+    width: 48%;
+    margin: 0;
+    padding: 10px 1%;
+    font-size: 12pt;
+    display: inline-block;
+    vertical-align: top;
+}
+
+article > form {
+	font-size: 12pt;
+	width: 80%;
+    padding: 0 10%;
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+article > form fieldset {
+	width: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+article > form fieldset p {
+	width: auto;
+	padding: 0;
+	margin: 7px 0;
+}
+
+#firstname, #lastname, #checkin, #checkout {
+	padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 13pt;
+}
+
+article > form .box_formulario input {
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	background: #01a9db;
+}
+
+table tbody tr td:last-child {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 15pt;
+	color: #01a9db;
+	padding: 10px 15px;
+}
+
+table tbody tr:hover td:last-child {
+	color: #333;
+}
+
+
+table tbody tr td:first-child img {
+	width: 100%;
+}
+
+.informacoes {
+	line-height: 160%;
+	word-spacing: 3px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 110px;
+}
+
+footer {
+	height: 60px;
+	width: 100%;
+	margin-top: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.endereco_fim {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#logo_topo {
+	height: 52px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 30px;
+}
+
+#logo_topo img {
+	padding: 10px 0;
+    float: left;
+    height: 32px;
+    width: auto;
+}
+
+#topo {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+#topo img {
+	width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    float: none;
+    padding: 10px 0;
+}
+
+footer > iframe {
+	width: 80%;
+	padding: 10px 10%;
+	height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+	#quartos tbody tr:nth-child(odd) td:last-child {
+		color: #01a9db;
+	}
+
+	#quartos tbody tr:nth-child(even) td:last-child {
+		color: #333;
+	}
+
+	tbody tr:hover {
+		background-color: initial;
+	}
+
+	#quartos tbody tr {
+		display: block;
+		width: 100%;
+	}
+
+	#quartos tbody tr td {
+		display: block;
+	}
+
+	table {
+		border-collapse: collapse;
+    	width: 100%;
+	}
+
+	#quartos thead {
+		display: none;
+	}
+
+	#quartos tbody td:last-child {
+		text-align: center;
+	    font-size: 22pt;
+	    padding-top: 0;
+	}
+	#quartos tbody tr:nth-child(even) {
+		background-color: #89e4ff;
+	}
+
+	#quartos tbody tr {
+		padding: 20px 0;
+		/*border-bottom: 1px solid #58bd55;*/
+	}
+
+	#quartos tbody td:first-child {
+		padding: 0;
+	}
+
+	#quartos tbody td:first-child img {
+		width: 90%;
+	    height: auto;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	    position: relative;
+	    float: none;
+	}
+
+	.informacoes {
+		line-height: 160%;
+	    word-spacing: 3px;
+	    text-align: justify;
+	    width: 90%;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	    padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer > iframe {
+		display: none;
+	}
+
+	#img_inicio {
+		width: 80%;
+		padding: 0 10%;
+	}
+
+	article p {
+		width: 80%;
+		padding: 10px 10%;
+	}
+}
